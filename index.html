@@ -409,6 +409,33 @@
             color: var(--color-text);
         }
 
+        .project-image {
+            /* Sets the height and aspect ratio for the image container */
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9/16 * 100) */
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-size: cover; /* Ensures the image covers the container */
+            background-position: top center; /* Focuses on the top of the screenshot */
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--color-border);
+        }
+
+        /* Specific background images for each project */
+        #img-analytics {
+            background-image: url('project1-analytics.jpg'); 
+        }
+        /* Repeat for other projects if needed: */
+        #img-ecommerce {
+            background-image: url('project2-ecommerce.jpg');
+        }
+        
+        #img-portfolio {
+            background-image: url('project3-portfolio.jpg');
+        }
+
         /* --- Contact Section --- */
         #contact {
             background-color: var(--color-card-bg);
@@ -665,10 +692,12 @@
                 
                 <!-- Project 1 -->
                 <div class="card project-card" role="article">
-                    <h3>01. Real-time Analytics Engine</h3>
-                    <p>A high-performance application designed to process and visualize 50k+ data points per second. Optimized data retrieval using memoization techniques.</p>
-                    <span class="tags">#VanillaJS #DataViz #Performance</span>
-                    <a href="https://github.com/janedoe/analytics-engine" class="project-link" target="_blank" rel="noopener noreferrer">View Source Code &rarr;</a>
+                    <div class="project-image" id="img-UiUx"></div>
+                    <h3>UI/UX Design Prototype (KUTS App)</h3>
+                    <p>A defined Figma prototype for a mobile transportation application that demonstrates UI and UX design abilities (KUTS).</p> 
+                    <p>Creating user flows, wireframing, and developing a responsive, aesthetically consistent interface with an emphasis on accessibility and simple navigation were all part of the project.</p>
+                    <span class="tags">#Figma #UI/UX Design #Prototyping #User Flow</span>
+                    <a href="https://www.figma.com/proto/0WH1Xe5VsJzgF9MxvWx5Sd/UIUX-Project_Integrated-Map?page-id=0%3A1&node-id=51-1575&starting-point-node-id=190%3A554&t=IEn0QRYOzaw0UkGc-1" class="project-link" target="_blank" rel="noopener noreferrer">View Source Code &rarr;</a>
                 </div>
 
                 <!-- Project 2 -->
@@ -938,6 +967,7 @@
 </body>
 
 </html>
+
 
 
 
