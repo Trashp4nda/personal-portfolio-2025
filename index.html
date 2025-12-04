@@ -10,26 +10,24 @@
     
     <style>
         /* =================================================================
-           1. Global Styles and CSS Variables
-           ================================================================= */
+   1. Global Styles and CSS Variables
+   ================================================================= */
         :root {
-            /* Light Mode Defaults */
-            --color-primary: #1565C0; /* Strong Blue */
-            --color-secondary: #42A5F5; /* Lighter Blue */
-            --color-text: #263238; /* Dark text (Blue Grey) */
-            --color-background: #F5F5F5; /* Light Grey background */
-            --color-card-bg: #FFFFFF; /* White cards */
+            --color-primary: #388E3C; 
+            --color-secondary: #66BB6A; 
+            --color-text: #263238; 
+            --color-background: #F5F5F5; 
+            --color-card-bg: #FFFFFF; 
             --color-border: #E0E0E0;
             --color-shadow: rgba(0, 0, 0, 0.1);
             --font-family: 'Inter', sans-serif;
             --border-radius: 12px;
-            scroll-behavior: smooth; /* JS Feature 1: Smooth Scrolling via CSS */
+            scroll-behavior: smooth;
         }
-
         /* Dark Mode Configuration */
         body.dark-mode {
-            --color-primary: #BBDEFB;
-            --color-secondary: #64B5F6;
+            --color-primary: #81C784; 
+            --color-secondary: #4CAF50; 
             --color-text: #E0E0E0;
             --color-background: #10151C;
             --color-card-bg: #1E2730;
@@ -217,7 +215,8 @@
         .nav-links li a.active,
         .nav-links li a:hover {
             color: var(--color-primary);
-            background-color: rgba(66, 165, 245, 0.1); /* Lighter blue hint */
+            /* Change the RGBA value to use the opacity of your new accent color (#66BB6A) */
+            background-color: rgba(102, 187, 106, 0.1); 
         }
         
         /* JS Feature 7: Dark Mode Toggle Button */
@@ -967,6 +966,7 @@
 </body>
 
 </html>
+
 
 
 
